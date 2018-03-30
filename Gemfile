@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
+  repo_name = "npgolfleague/npgl.git" unless repo_name.include?("/")
+  "https://github.com/npgolfleague/npgl.git"
 end
 
 
@@ -37,6 +37,12 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'capistrano', 				require: false
+  gem 'capistrano-rvm',			require: false
+  gem 'capistrano-rails',		require: false
+  gem 'capistrano-bundler',	require: false
+  gem 'capistrano3-puma',		require: false
+  
   gem 'byebug', platform: :mri
 end
 
