@@ -74,7 +74,7 @@
 #  - https://github.com/mina-deploy/mina/tree/master/docs
 #------------------------------
 # Change these
-server 'your_server_ip', port: your_port_num, roles: [:web, :app, :db], primary: true
+server '165.227.206.89', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@npgolfleague.com:npgolfleague/npgl.git'
 set :application,     'npgl'
